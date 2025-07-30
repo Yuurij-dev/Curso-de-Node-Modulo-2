@@ -1,0 +1,14 @@
+{
+  "extends": ["@rocketseat/eslint-config/node", "plugin:prettier/recommended"],
+  "plugins": ["prettier"],
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "singleQuote": true,
+        "semi": true
+      }
+    ],
+    "quotes": "off"
+  }
+}

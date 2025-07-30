@@ -1,0 +1,63 @@
+instalar o ts :
+    npm i typescript -D 
+    npm i @types/node -D
+    npm i tsx -D
+
+Criar arquivo tsconfig.json:
+    npx tsc --init 
+    Em tsconfig.json troque o target para uma versão mais nova do javascript. "es2020"
+
+Transformar o arquivo .ts para .js:
+    npm tsc src/index.ts
+
+Comando para rodar Apenas para ambiente de desenvolvimento.: 
+    npx tsx src/server.js
+    
+Script para rodar em DEV:
+    "dev": "tsx watch src/server.ts"
+
+
+-ESLint 
+
+Instalar o ESLint da rockeatseat:
+    npm i eslint @rocketseat/eslint-config -D
+    crie um arquivo chamadao .eslintrc.json
+    {
+        "extends": [
+            "@rocketseat/eslint-config/node"
+        ]
+    }
+
+Script para rodar o eslint
+    "lint": "eslint src --ext .ts --fix"
+
+
+- Knex + sqlite
+    npm install knex sqlite3
+
+
+Comandos Knex:
+    comando de script : "knex": "tsx ./node_modules/knex/bin/cli.js --knexfile knexfile.ts"
+    comando para criar uma migrate: npm run knex -- migrate:make [nome-migrate]
+    comando para rodar uma migrate: npm run knex -- migrate:latest
+    comando para cancelar uma migrate: npm run knex -- migrate:rollback
+
+
+Instalando o .env:
+    npm i dotenv
+
+Instalando o zod :
+    npm i zod
+
+
+
+
+
+Compilar o TS:
+
+    instalar o tsup - npm i tsup -D
+    criar um script de build: "build": "tsup src --out-dir build"
+
+Instalar o Postgress:
+
+    npm i pg
