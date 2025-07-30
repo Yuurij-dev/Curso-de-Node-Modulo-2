@@ -10,7 +10,8 @@
     "knex": "tsx ./node_modules/knex/bin/cli.js --knexfile knexfile.ts",
     "lint": "eslint src --ext .ts --fix",
     "build": "tsup src --out-dir build",
-    "test": "vitest"
+    "test": "vitest",
+    "start": "npm run knex migrate:latest && node build/server.js"
   },
   "keywords": [],
   "author": "",
